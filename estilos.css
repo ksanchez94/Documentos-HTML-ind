@@ -1,0 +1,328 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 30px;
+}
+
+.principal .nav-item .nav-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-gray);
+    display: inline-block;
+}
+
+.principal .nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s;
+    bottom: 0;
+}
+
+.principal .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+.container {
+    padding: 10px;
+    max-width: 980px;
+    margin: auto;
+    background-color:#00FFFF ;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+}
+.tituloHabilidades {
+    text-align: center;
+    color: rgb(226, 43, 144);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px;
+    margin-top:70%;
+}
+
+.list-group-horizontal {
+    padding: 20px;
+    justify-content: center;
+    margin-left: 40px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+}
+.experiencia {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experiencia-body {
+    background-color:bisque;
+    color: rgba(0, 0, 255, 0.178);
+  }
+  
+  
+.svg_bottom {
+    transform: scaleY(-1);
+    top: -2px;
+}
+  
+.experiences-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+}
+  
+.experience-date {
+    font-size: 25px;
+    font-weight: bold;
+    color:rgba(0, 255, 0, 0.37);
+}
+  
+.experience-company {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+  
+.experience-position {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+  
+.experience-description {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+  
+.experience {
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+  
+@media (min-width: 950px) {
+.experiences-title {
+    font-size: 50px;
+    margin: 35px 0;
+}
+  
+    .experience-date {
+      font-size: 40px;
+    }
+  
+    .experience-company {
+      font-size: 25px;
+    }
+  
+    .experience-position {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    .experience-description {
+      font-size: 20px;
+      margin-top: 10px;
+      line-height: 1.3;
+    }
+  
+    .experience {
+      padding: 0;
+    }
+  
+    .experience_left {
+      text-align: right;
+    }
+  
+.experiences-grid {
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+  
+.line {
+    background-color: rgba(0, 255, 0, 0.288);
+    position: relative;
+}
+  
+.line::before,
+.line::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 255, 0, 0.24);
+    border-radius: 50%;
+  
+    position: absolute;
+    top: -20px;
+    left: -9px;
+}
+  
+.line::after {
+    top: 100%;
+    z-index: 1;
+}
+}
+  .profile-info {
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 80%;
+    max-width: 300px;
+}
+
+.profile-img-section {
+    position: relative;
+}
+
+.profile-img-line {
+    background-color: var(--secundary-color);
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color:rgba(213, 222, 135, 0.815);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.profile-details {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+.profile-btn {
+    background-color: rgba(0, 0, 0, 0.493);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 20px;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.profile-btn:hover {
+    filter: brightness(130%);
+}
+
+h1 {
+    padding-top: 70px;
+}
+
+li {
+    margin-right: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+}
+
+
+li:hover,
+a:focus {
+    background-size: 100% 2px;
+}
+
+ul {
+    margin-left: 110px;
+
+}
+
+.profile-info {
+    margin-bottom: 0px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 350px;
+    transform: scaleX(-1);
+}
+
+.profile {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 970px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.profile-title {
+    font-size: 60px;
+}
+
+.profile-details {
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.profile-btn {
+    font-size: 28px;
+}
+
+contacto{
+    background-color:#eb4f44a1;
+    width: 79%;
+    margin-left: 14%;
+    margin-right: 2%;
+    height: 500px;
+    display: flex;
+    border-radius: 15px;
+}
+.tituloCurso {
+    color: #00d9ffc7;
+    font-size: 24px;
+    margin-left: 40%;
+    margin-right: 42%;
+    margin-top: 38%;
+}
+
+.card {
+    float: left;
+    margin: 33px;
+
+}
+
+.contenedor_cursos {
+    margin-bottom: 65%;
+}
